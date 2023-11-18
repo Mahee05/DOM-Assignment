@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geomatry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-[#1090d81a]">
+        <div class="container w-11/12 mx-auto flex justify-between items-center  py-8">
+            <div class="logo">
+                <h1 class="font-bold text-3xl text-[#111111cc]">Interactive</h1>
+                <p class="text-2xl text-[#11111199]">Geometry Genius</p>
+            </div>
+            <div class="blog">
+                <button id="btnBlog" class="bg-[#1090D8] font-bold text-xl text-[#fff] w-28  h-12 rounded-lg hover:opacity-50 transition-[0.3s]">Blog</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container w-11/12 mx-auto">
+        <div class="main-wrapper grid md:grid-cols-3 grid-cols-2">
+            <div class="col-span-2">
+                <div class="card-wrapper flex flex-wrap justify-between gap-x-0">
+                    <div class="single-card flex text-center flex-col w-2/6 bg-[#FBBCED] py-12">
+                        <img class="w-9/12 mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-[#414141] font-bold text-2xl">Triangle</h2>
+                        <span classs="block mt-2">Area(A) = 0.5 x b x h</span>
+                        <div class="traiangle-input-wrapper mt-6 mb-12">
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-4" id="triangleInputB" placeholder="b">
+                            <span>cm</span>
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-3" id="triangleInputH" placeholder="H">
+                            <span>cm</span>
+                        </div>
+                        <button class="calculate bg-[#1090D8] w-11/12 text-[#fff] text-xl mx-auto py-4 rounded-lg" id="calculateTri">Calculate</button>
+                    </div>
+                    <div class="single-card flex text-center items-center flex-col w-2/6 bg-[#FBBCED] py-12">
+                        <img class="w-9/12 mx-auto" src="images/rectangle.png" alt="">
+                        <h2 class="text-[#414141] font-bold text-2xl">Rectangle</h2>
+                        <span classs="block mt-2">Area(A) = 0.5 x b x h</span>
+                        <div class="traiangle-input-wrapper mt-6 mb-12">
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-4" id="triangleInputB" placeholder="b">
+                            <span>cm</span>
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-3" id="triangleInputH" placeholder="H">
+                            <span>cm</span>
+                        </div>
+                        <button class="calculate bg-[#1090D8] w-11/12 text-[#fff] text-xl mx-auto py-4 rounded-lg" id="calculate">Calculate</button>
+                    </div>
+                    <div class="single-card flex text-center flex-col w-2/6 bg-[#FBBCED] py-12">
+                        <img class="w-9/12 mx-auto" src="images/rhombus.png" alt="">
+                        <h2 class="text-[#414141] font-bold text-2xl">Rhombus</h2>
+                        <span classs="block mt-2">Area(A) = 0.5 x d <sub>1</sub> x d <sub>2</sub> </span>
+                        <div class="traiangle-input-wrapper mt-6 mb-12">
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-4" id="rectangleInputW" placeholder="w">
+                            <span>cm</span>
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-3" id="rectangleInputL" placeholder="l">
+                            <span>cm</span>
+                        </div>
+                        <button class="calculate bg-[#1090D8] w-11/12 text-[#fff] text-xl mx-auto py-4 rounded-lg" id="calculateRecta">Calculate</button>
+                    </div>
+                    <div class="single-card flex text-center flex-col w-2/6 bg-[#FBBCED] py-12">
+                        <img class="w-9/12 mx-auto" src="images/parallelogram.png" alt="">
+                        <h2 class="text-[#414141] font-bold text-2xl">parallelogram</h2>
+                        <span classs="block mt-2">Area(A) = b x h</span>
+                        <div class="traiangle-input-wrapper mt-6 mb-12">
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-4" id="paralleloInputB" placeholder="b">
+                            <span>cm</span>
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-3" id="paralleloInputH" placeholder="H">
+                            <span>cm</span>
+                        </div>
+                        <button class="calculate bg-[#1090D8] w-11/12 text-[#fff] text-xl mx-auto py-4 rounded-lg" id="calculateParallelo">Calculate</button>
+                    </div>
+                    <div class="single-card flex text-center flex-col w-2/6 bg-[#FBBCED] py-12">
+                        <img class="w-9/12 mx-auto" src="images/pentagon.png" alt="">
+                        <h2 class="text-[#414141] font-bold text-2xl">Pentagon</h2>
+                        <span classs="block mt-2">Area(A) = 0.5 x b x h</span>
+                        <div class="traiangle-input-wrapper mt-6 mb-12">
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-4" id="triangleInputB" placeholder="p">
+                            <span>cm</span>
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-3" id="triangleInputH" placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <button class="calculate bg-[#1090D8] w-11/12 text-[#fff] text-xl mx-auto py-4 rounded-lg" id="calculate">Calculate</button>
+                    </div>
+                    <div class="single-card flex text-center flex-col w-2/6 bg-[#FBBCED] py-12">
+                        <img class="w-9/12 mx-auto" src="images/ellipse.png" alt="">
+                        <h2 class="text-[#414141] font-bold text-2xl">Triangle</h2>
+                        <span classs="block mt-2">Area(A) = 0.5 x b x h</span>
+                        <div class="traiangle-input-wrapper mt-6 mb-12">
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-4" id="triangleInputB" placeholder="b">
+                            <span>cm</span>
+                            <input type="text" class="w-2/6 bg-[#F1F1F1] border-lg outline-0 text-[#414141] rounded-lg py-2 px-3" id="triangleInputH" placeholder="H">
+                            <span>cm</span>
+                        </div>
+                        <button class="calculate bg-[#1090D8] w-11/12 text-[#fff] text-xl mx-auto py-4 rounded-lg" id="calculate">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="h-screen overflow-scroll">
+                <ul id="ul" class="ml-10"></ul>
+            </div>
+        </div>
+    </main>
+    <script  src="app.js"></script>
+</body>
+</html>
